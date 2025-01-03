@@ -39,4 +39,8 @@ nav {
     text-align: justify;
     line-height: 1.6;
     color: #F39C12;
+    margin-bottom: 20px; /* Space between the child divs */
+    padding: 15px; /* Padding inside each child div */
+    background-color: #444444; /* Different background for the child div */
+    border-radius: 5px
 }
