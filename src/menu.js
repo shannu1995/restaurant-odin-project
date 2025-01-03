@@ -9,10 +9,10 @@ const listOfItems = (()=>{
         }
     };
     const createArray = () =>{
-        basic_array.push(createItem("Soup of the Day", "$10.00", "Yes"));
-        basic_array.push(createItem("Dessert of the Day", "$15.00", "Yes"));
+        basic_array.push(createItem("Soup of the Day", "$10.00", "Available"));
+        basic_array.push(createItem("Dessert of the Day", "$15.00", "Available"));
         basic_array.push(createItem("Main Course #1 of the Day", "$45.00", "Sold Out!"));
-        basic_array.push(createItem("Main Course #2 of the Day", "$50.00", "Yes"));
+        basic_array.push(createItem("Main Course #2 of the Day", "$50.00", "Available"));
     }
     const getItems = () => basic_array;
     const clearArray = () => basic_array =[];
