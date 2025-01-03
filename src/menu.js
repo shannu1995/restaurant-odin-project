@@ -15,15 +15,18 @@ const listOfItems = (()=>{
         basic_array.push(createItem("Main Course #2 of the Day", "$50.00", "Yes"));
     }
     const getItems = () => basic_array;
+    const clearArray = () => basic_array =[];
     return {
         createArray,
-        getItems
+        getItems,
+        clearArray
     }
 })();
 
 export const menu = () => {
     let menu_div = document.getElementById("content");
     menu_div.innerHTML = "";
+    listOfItems.clearArray();
     listOfItems.createArray();
     let result_array = listOfItems.getItems();
     let menu_list = document.createElement("ul");
